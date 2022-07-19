@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>James' HTML Site</title>
+
+        <!--want to select an html element and put in JS
+        document ojbect, queryselector, with query selector what kind of element
+        we want to grab, gets canvas tag, then puts it in canvas var
+        now we can draw 2d shapes with c.fillRect-->
+        
+        <style>
+            canvas {
+                border: 1px solid black;
+            }
+           
+        </style>
+
+    </head>
+    <body>
+        <a href="index.html">
+            <img src="logo.png" alt="logo" width="75" height="75">
+        </a>
+        <h1> James' Portfolio</h1>
+        <nav> 
+            <a href="persona.html">Persona Diagram</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="extra.html">Extra</a>
+        </nav>
+        
+        <h2> Extra </h2>
+        <p> Here is the testing grounds for various html tags.</p>
+
+        <hr />
+
+        <div class="something">
+            <span>Putting this here to prevent myself from overusing div tags.</span>
+            <br />
+            <span>While div is the genertic <b>block</b> container, span is the generic <b>inline</b> container.</span>
+            <br />
+            <span>While <b>b</b> and <i>i</i> tags are only visual, <strong>strong</strong> and <em>em</em> tags gives both visual and semantic meaning.</span>
+            <pre>This is a test of the defualt style set for the tag.</pre> 
+            <code> This is a test of the code tag in html.</code>
+        </div>
+
+        <hr />
+        <p>This a test of the iframe tag in html.</p>
+        <iframe src="contact.html" width="500" height="200" name="google"></iframe>
+        
+        <hr />
+        <p>Click on the button below to play a audio clip.</p>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+        </audio>
+
+        <hr /> 
+        <p>Congrats Class of 2022!</p>
+        <video width="320" height="240" controls>
+            <source src="ucsdgrad144p.mp4" type="video/mp4">
+        </video>
+        <hr />
+
+        <!--script for canvas must come after the canvas tag-->
+        <h5><code>I wonder why these squares getting bigger?</code></h5>
+        <canvas width="500" height="250"></canvas>
+        <script>
+            var canvas = document.querySelector('canvas');
+            var c = canvas.getContext('2d');
+            //x,y,width,height
+            c.fillRect(50, 50, 50, 50);
+            c.fillRect(150, 50, 100, 100);
+            c.fillRect(300, 50, 150, 150);            
+        </script>
+        
+        <br />
+        <svg width="500" height="250">
+            <rect width="50" height="50"></rect>
+        </svg>
+        <br />
+        <svg width="500" height="250">
+            <rect width="100" height="100"></rect>
+        </svg>
+        <br />
+        <svg width="500" height="250">
+            <rect width="150" height="150"></rect>
+        </svg>
+        <h5><code>What is the meaning of this?</code></h5>
+
+    </body>
+
+</html>
