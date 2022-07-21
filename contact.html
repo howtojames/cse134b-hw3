@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <title>James' HTML Site</title>
         <!--styles.css to be added later-->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
 
     <style>
         tabel, th, td, tr{
@@ -13,35 +13,45 @@
         }
     </style>
     </head>
+
     <body>
-        <a href="index.html">
-            <img src="logo.png" alt="logo" width="75" height="75">
-        </a>
-        <h1> James' Portfolio</h1>
-        <h2> Contact</h2>
-        <nav> 
-            <a href="persona.html">Persona Diagram</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="extra.html">Extra</a>
-        </nav>
+        <header> 
+            <h1> 
+                <a href="index.html">
+                    <img src="logo.png" width="50" height="50" alt="logo"> 
+                    James' Portfolio 
+                </a>
+            </h1>
+
+            <nav> 
+                <a href="index.html">Home</a>
+                <a href="persona.html">Persona Diagram</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="extra.html">Extra</a>
+                </ul>
+            </nav>
+        </header>
         
         <main>
-        <p>Click below to for contact information.</p>
-        <details>
-            <summary>Info</summary>
-            <p>email: jrjamesruan@gmail.com</p>
-            
+        
+       
+        <details class="onecontact">
+            <summary>Click here for contact information.</summary>
+            <!--inside summary dropbox-->
+            email: jrjamesruan@gmail.com
         </details>
-        <br>
+     
+        
 
-        <button>More Information laters using template and JS</button>
+        <p class="twocontact">More Information upated later with JS
         <template>
             <p>More information can be hidden and revealed using template with JS.</p>
         </template> 
-        <br /><br /><br />
+        </p>
+    
         
-        <table>
+        <table class="threecontact">
             <caption><code>Schedule of Availability</code></caption>
             <colgroup>
                 <col span="2" class="week-view">
