@@ -18,6 +18,7 @@ html{
 
 
 
+
 /*for container grid
 applies to main content after header*/
 main {
@@ -34,8 +35,9 @@ main {
     grid-column:1/3;
     grid-row:1;
 }
-.onehome > h5{
-    padding: 5vh 5vw;
+.onehome *{
+    padding: 5vh 0 0 0;
+    font-size: 1.2em;
 }
 
 .twohome{
@@ -55,7 +57,7 @@ section > button {
 }
 
 .onepersona {
-    padding: 2vh 5vw;
+    padding: 5vh 5vh;
     grid-column:1/3;
     grid-row:1;
 }
@@ -92,8 +94,8 @@ section > button {
 .oneproject{
     grid-column: 1;
     grid-row: 1/2;
-    padding: 7vh 0;
-    margin-left: 8vw;
+    padding: 5vh 0 0 7vw;
+   
 }
 .twoproject{
     grid-column: 2;
@@ -115,12 +117,12 @@ section > button {
 .twocontact{
     grid-column: 2;
     grid-row: 1/2;
-    padding: 8vh 0;
+    padding: 10vh 0 0 0;
 }
 .threecontact{
     grid-column: 1/3;
     grid-row: 2;
-    padding: 5vh 5vw;
+    padding: 5vh 35vw;
 }
 
 /*extra page*/
@@ -165,7 +167,7 @@ section > button {
 
 /*logo and page name*/
 header h1{
-    background-color: #36454f;
+    background-color: black;
     /*padding to vertically center, relative to font size*/
     padding: 0.5em;
 }
@@ -197,6 +199,13 @@ header > nav a {
 
 }
 
+body * {
+    font-size: 1.05em;
+}
+
+legend {
+    border: 1px solid black;
+}
 
 
 /*for animations*/
