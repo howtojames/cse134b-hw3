@@ -125,13 +125,15 @@ section > button {
     padding: 5vh 35vw;
 }
 
+.extramain > * {
+    border: 1px solid black;
+}
+
 /*extra page*/
 .oneextra{
     grid-column: 1;
     grid-row: 1;
     padding: 8vh 1vh;
-    
-
     
 }
 .twoextra{
